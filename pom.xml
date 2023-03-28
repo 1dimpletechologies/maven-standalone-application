@@ -37,6 +37,21 @@
 
         </dependencies>
 
+        <distributionManagement>
+	    <repository>
+	      <id>nexus</id>
+	      <name>Landmark Technologies Releases Nexus Repository</name>
+	      <url>http://35.182.7.223:8081/repository/paypal-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Landmark Technologies Snapshot Nexus Repository </name>
+	      <url>http://3.96.164.150:8181/repository/paypal-snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
+        
         <!-- Committing and updating changes through Maven, by using below mvn command.
                 For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating
                 mvn scm:update -->
